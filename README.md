@@ -15,7 +15,7 @@
 
 *A sanitized portfolio case study based on a real-world workstation configuration. No internal endpoints, credentials or client identifiers are included.*
 
-[**Setup guide**](docs/SETUP.md) · [**Architecture**](docs/ARCHITECTURE.md) · [**Troubleshooting**](docs/TROUBLESHOOTING.md) · [**Polski**](README_PL.md)
+[**Setup guide**](docs/SETUP.md) · [**Architecture**](docs/ARCHITECTURE.md) · [**Troubleshooting**](docs/TROUBLESHOOTING.md)
 
 </div>
 
@@ -141,7 +141,6 @@ The helper performs **read-only checks** and does not print passwords, applicati
 ```text
 .
 ├── README.md
-├── README_PL.md
 ├── .gitignore
 ├── assets/
 │   └── raspberry-pi-kiosk.jpg
