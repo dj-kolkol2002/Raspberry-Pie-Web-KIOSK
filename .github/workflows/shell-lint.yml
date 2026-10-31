@@ -1,0 +1,17 @@
+name: Shell validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: Check Bash syntax
+        run: bash -n scripts/kiosk-launch.sh scripts/kiosk-healthcheck.sh
+      - name: Run ShellCheck
+        run: shellcheck scripts/*.sh
